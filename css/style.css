@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/*font-family: 'Lato', sans-serif;
+*/
+
+
+header{
+	background-color: #f6f9f9;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+	font-family: 'Lato', sans-serif;
+	color: black;
+	font-weight: 500;
+}
+
+.navbar{
+	padding: 20px 0;
+}
+
+.banner{
+	background-image: url(../images/banner1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90vh;
+}
+
+.hg{
+	height: 600px;
+}
+
+.content{
+   text-align: center;
+
+}
+
+.content h1{
+   color: white;
+   font-size: 70px;
+}
+
+.content span{
+	display: inline-block;
+	background: #15a4fa;
+	height: 3px;
+	width: 100%;
+
+}
+
+.content p{
+   color: white;
+   margin-top: 20px;
+   margin-bottom: 50px;
+
+}
+
+.btn-custom{
+	background: transparent;
+	border: 1px solid #15a4fa;
+
+}
+
+.btn-custom:hover{
+	background: #15a4fa;
+
+}
+
+
+
+.icon{
+	
+	position: absolute;
+	left: 50%;
+	margin-top: 80px;
+	transform: translate(-50%,-20%);
+	animation: icon-ani 1s linear infinite;
+	animation-direction: alternate;
+
+}
+
+.icon i{
+	color: white;
+	font-size: 24px;
+
+}
+
+@keyframes icon-ani{
+	0%{
+		transform: translate(-50%,0%);	
+	}
+
+	100%{
+        transform: translate(-50%,-100%);
+		
+	}
+		
+	
+}
+
+.design{
+
+	background: #f6f9f9;
+
+}
+
+.design h3{
+	font-family: 'Lato', sans-serif;
+	color: #2d3950;
+	font-size: 35px;
+	font-weight: 400;
+	
+}
+
+.design p{
+	color: #999999;
+	font-size: 18px;
+	margin-top: 20px;
+
+}
+
+.feature-part{
+
+}
+
+.icon-box{
+   height: 100px;
+   width: 100px;
+   margin: auto;
+   font-size: 40px;
+   text-align: center;
+   line-height: 100px;
+   color: white;
+
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#44baff+1,48baff+48,48baff+49,5fc3ff+54,5fc3ff+99 */
+background: rgb(68,186,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(68,186,255,1) 1%, rgba(72,186,255,1) 48%, rgba(72,186,255,1) 49%, rgba(95,195,255,1) 54%, rgba(95,195,255,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(68,186,255,1) 1%,rgba(72,186,255,1) 48%,rgba(72,186,255,1) 49%,rgba(95,195,255,1) 54%,rgba(95,195,255,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(68,186,255,1) 1%,rgba(72,186,255,1) 48%,rgba(72,186,255,1) 49%,rgba(95,195,255,1) 54%,rgba(95,195,255,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+  
+}
+
+.icon-box i{
+
+}
+
+.feature-content{
+
+}
+
+.feature-content h4{
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
+
+
+}
+
+.feature-content p{
+	margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.showcase{
+	background-color: #f6f9f9;
+	
+
+}
+
+.showcase-content{
+
+}
+
+.showcase-content h3{
+
+}
+
+
+.showcase-content p{
+
+
+}
+
+.image {
+	position: relative;
+	margin-bottom: 30px;
+
+
+}
+/*
+.image:hover img{
+	transform: scale(1.1);
+    transition: all .4s ease;
+
+}
+*/
+.image::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #48baff96;
+}
+
+.image:hover::before{
+	 bottom: 100%;
+	 height: 100%;
+
+}
+
+.showcase-icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-size: 20px;
+	opacity: 0;
+	transition: all .4s ease;
+}
+
+.showcase-icon i{
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+.image:hover .showcase-icon{
+	opacity: 1;
+}
+
+.contact-form{
+	background-image: url(../images/contactimg.png);
+	position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: 25px;
+	padding-bottom: 60px;
+	
+}
+
+.contact-form::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:#2d3950ab;
+
+
+}
+
+.contact-content{
+	color: white;
+	margin: 30px 0;
+	text-align: center;
+
+}
+
+form input{
+	width: 100%;
+	margin: 10px auto;
+	height: 35px;
+	border-radius: 5px;
+	background: transparent;
+	
+	border: 1px solid #6a6a86;
+	padding: 10px;
+}
+
+form textarea{
+	width: 100%;
+	 background: transparent;
+	 border: 1px solid #6a6a86;
+	 border-radius: 5px;
+}
+
+input[type=checkbox]{
+	height: 12px;
+	width: 15px;
+	margin: 0;
+	margin-right: 5px;
+
+}
+
+.subscribe ul{
+	list-style: none;
+}
+
+
+.subscribe li{
+	float: left;
+	color: white;
+}
+
+.btn-contact{
+	float: right;
+	margin: 0;
+	color: white;
+	padding: 7px 30px;
+
+
+}
+
+.Copyright{
+	float: left;
+	margin-top: 20px;
+	color: grey;
+	size: 30px;
+}
